@@ -1,0 +1,72 @@
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.board{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.title{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.status{
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.reset{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    cursor: pointer;
+    background-color: #6c5ce7;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.reset:hover{
+    box-shadow: 0 0 10px 3px cyan;
+}
+
+.winner{
+    color: #00ff00;
+    border: #00ff00 solid 1px;
+    padding: 5px 30px;
+    border-radius: 8px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.score{
+    background-color: #6c5ce7;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
